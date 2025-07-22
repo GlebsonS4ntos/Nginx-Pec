@@ -1,18 +1,18 @@
 # e-SUS Docker
 
-Projeto feito para rodar o **e-SUS PEC** utilizando Docker em ambiente Linux.
+Projeto Dockerizado para rodar o **e-SUS PEC** com uma personalização via `iframe`, usando containers separados para a aplicação, banco de dados e Nginx.
 
 ## ✅ Requisitos
 
 - Docker e Docker Compose instalados  
-- Acesso privilegiado (`sudo`) no sistema Linux  
+- Acesso privilegiado (`sudo`) caso esteja utilizando sistema Linux  
 - Espaço em disco suficiente para a aplicação e banco de dados
 
 ---
 
 ## 🚀 Como rodar
 
-### Criando Pec e banco em containers separados
+### Criando Pec, banco e Nginx em containers separados
 
 ```bash
 sudo docker-compose -f docker-compose.db.yml up -d
