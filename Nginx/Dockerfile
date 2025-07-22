@@ -1,5 +1,8 @@
 FROM nginx:alpine   
 
+# Se quiser usar um arquivo local, utilizar dentro da pasta test dentro do diretório do Nginx (e comentar o git clone)
+#COPY ./test/ /usr/share/nginx/js
+
 ARG ESUS_IFRAME_GITHUB
 
 RUN apk add --no-cache git curl
