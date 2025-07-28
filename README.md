@@ -15,7 +15,7 @@ Projeto Dockerizado para rodar o **e-SUS PEC** com uma personalização via `ifr
 ### Criando Pec, banco e Nginx em containers separados
 
 ```bash
-sudo docker-compose -f docker-compose.db.yml up -d
+sudo docker-compose -f docker-compose.yml up -d
 ```
 
 > 💡 Use a flag `--build` para recriar a imagem, caso necessário.
@@ -42,3 +42,5 @@ sudo docker-compose -f docker-compose.db.yml up -d
   ```bash
   docker-compose exec db psql -U $POSTGRES_USER -d $POSTGRES_DB
   ```
+
+Atenção: Importante preencher o .env.
